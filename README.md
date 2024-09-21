@@ -1,2 +1,2 @@
 # response-code-msg
-Teamones 返回code和msg处理
+自动生成返回错误code和msg处理
