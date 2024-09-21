@@ -1,6 +1,6 @@
 <?php
 
-namespace WebmanMicro\ResponseCodeMsg;
+namespace WebmanMicro\GenerateErrorCode;
 
 class Install
 {
@@ -10,9 +10,9 @@ class Install
      * @var array
      */
     protected static $pathRelation = array(
-        'config/plugin/webman-micro/response-code-msg' => 'config/plugin/webman-micro/generate-error-code',
+        'config/plugin/webman-micro/generate-error-code' => 'config/plugin/webman-micro/generate-error-code',
         'command/GenerateErrorCode.php' => 'app/command/GenerateErrorCode.php',
-        'support/ErrorCode.php' => 'support/ErrorCode.php',
+        'support/ErrorCode.php' => 'support/ErrorCode.php'
     );
 
     /**
