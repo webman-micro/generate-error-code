@@ -9,8 +9,9 @@ class Install
      * @var array
      */
     protected static $pathRelation = array (
-  'config/plugin/webman-micro/response-code-msg' => 'config/plugin/webman-micro/response-code-msg',
-        'command' => 'app/command'
+  'config/plugin/webman-micro/response-code-msg' => 'config/plugin/webman-micro/generate-error-code',
+        'command' => 'app/command',
+        'support' => 'support',
 );
 
     /**

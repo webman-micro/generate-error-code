@@ -7,7 +7,7 @@ declare(strict_types=1);
  * - 错误码为负数，共8位，前三位标识系统，中间两位是服务标识，后3位标识错误码
  */
 
-namespace teamones\responseCodeMsg;
+namespace WebmanMicro\GenerateErrorCode;
 
 class Code
 {

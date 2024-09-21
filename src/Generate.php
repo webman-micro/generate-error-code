@@ -5,7 +5,7 @@ declare(strict_types=1);
  * 生成错误码文件
  */
 
-namespace teamones\responseCodeMsg;
+namespace WebmanMicro\GenerateErrorCode;
 
 class Generate
 {

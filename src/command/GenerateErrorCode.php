@@ -30,8 +30,8 @@ class GenerateErrorCode extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $name = $input->getArgument('name');
-        $errorCodeConfig = config('error_code');
-        (new \teamones\responseCodeMsg\Generate($errorCodeConfig))->run();
+        $errorCodeConfig = config('plugin.webman-micro.generate-error-code.app');
+        (new \WebmanMicro\GenerateErrorCode\Generate($errorCodeConfig))->run();
         $output->writeln('generate:error_code');
         return self::SUCCESS;
     }
