@@ -1,0 +1,13 @@
+{
+  "name": "webman-micro/generate-error-code",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin webman-micro/generate-error-code",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "WebmanMicro\\ResponseCodeMsg\\": "src"
+    }
+  }
+}
