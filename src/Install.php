@@ -1,4 +1,5 @@
 <?php
+
 namespace WebmanMicro\ResponseCodeMsg;
 
 class Install
@@ -8,11 +9,11 @@ class Install
     /**
      * @var array
      */
-    protected static $pathRelation = array (
-  'config/plugin/webman-micro/response-code-msg' => 'config/plugin/webman-micro/generate-error-code',
-        'command' => 'app/command',
-        'support' => 'support',
-);
+    protected static $pathRelation = array(
+        'config/plugin/webman-micro/response-code-msg' => 'config/plugin/webman-micro/generate-error-code',
+        'command/GenerateErrorCode.php' => 'app/command/GenerateErrorCode.php',
+        'support/ErrorCode.php' => 'support/ErrorCode.php',
+    );
 
     /**
      * Install
@@ -40,13 +41,13 @@ class Install
     {
         foreach (static::$pathRelation as $source => $dest) {
             if ($pos = strrpos($dest, '/')) {
-                $parent_dir = base_path().'/'.substr($dest, 0, $pos);
+                $parent_dir = base_path() . '/' . substr($dest, 0, $pos);
                 if (!is_dir($parent_dir)) {
                     mkdir($parent_dir, 0777, true);
                 }
             }
             //symlink(__DIR__ . "/$source", base_path()."/$dest");
-            copy_dir(__DIR__ . "/$source", base_path()."/$dest");
+            copy_dir(__DIR__ . "/$source", base_path() . "/$dest");
             echo "Create $dest
 ";
         }
@@ -59,7 +60,7 @@ class Install
     public static function uninstallByRelation()
     {
         foreach (static::$pathRelation as $source => $dest) {
-            $path = base_path()."/$dest";
+            $path = base_path() . "/$dest";
             if (!is_dir($path) && !is_file($path)) {
                 continue;
             }
