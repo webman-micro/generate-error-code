@@ -11,7 +11,6 @@ class Install
      */
     protected static $pathRelation = array(
         'config/plugin/webman-micro/generate-error-code' => 'config/plugin/webman-micro/generate-error-code',
-        'command/GenerateErrorCode.php' => 'app/command/GenerateErrorCode.php',
         'support/ErrorCode.php' => 'support/ErrorCode.php'
     );
 
