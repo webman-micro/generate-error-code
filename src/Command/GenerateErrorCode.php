@@ -1,6 +1,6 @@
 <?php
 
-namespace WebmanMicro\GenerateErrorCode\Commands;
+namespace WebmanMicro\GenerateErrorCode\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
